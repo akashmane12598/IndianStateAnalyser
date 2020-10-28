@@ -37,5 +37,6 @@ namespace IndianStateAnalyser.DTO
             this.area = censusDataDAO.area;
             this.density = censusDataDAO.density;
         }
+
     }
 }
