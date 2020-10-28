@@ -20,5 +20,6 @@ namespace IndianStateAnalyser
             dataMap = new CSVAdapterFactory().LoadCSVData(country, csvFilePath, dataHeaders);
             return dataMap;
         }
+
     }
 }
