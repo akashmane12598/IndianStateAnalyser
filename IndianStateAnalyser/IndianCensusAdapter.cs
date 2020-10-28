@@ -1,4 +1,5 @@
 ﻿using IndianStateAnalyser.DTO;
+using IndianStateAnalyser.POCO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,7 +33,7 @@ namespace IndianStateAnalyser
 
                 if (csvFilePath.Contains("IndiaStateCensusData.csv"))
                 {
-                    dataMap.Add(column[0], new CensusDTO(new StateCodeDAO(column[1], column[2], column[3], column[4])));
+                    dataMap.Add(column[0], new CensusDTO(new CensusDataDAO(column[0], column[1], column[2], column[3])));
                 }
             }
 

@@ -5,6 +5,7 @@ using System.Text;
 
 namespace IndianStateAnalyser
 {
+    //This is the main class. In UnitTest, this class method is called
     public class CensusAnalyser
     {
         public enum Country

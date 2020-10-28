@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IndianStateAnalyser.POCO;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -23,14 +24,18 @@ namespace IndianStateAnalyser.DTO
 
         public CensusDTO(StateCodeDAO stateCodeDAO)
         {
-
+            this.serialNumber = stateCodeDAO.serialNumber;
+            this.stateName = stateCodeDAO.stateName;
+            this.tin = stateCodeDAO.tin;
+            this.stateCode = stateCodeDAO.stateCode;
         }
 
         public CensusDTO(CensusDataDAO censusDataDAO)
         {
-
+            this.state = censusDataDAO.state;
+            this.population = censusDataDAO.population;
+            this.area = censusDataDAO.area;
+            this.density = censusDataDAO.density;
         }
-
-
     }
 }
